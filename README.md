@@ -22,7 +22,8 @@ For it's GUI framework it makes use of the excellent npyscreen library.
 
 Installation
 ------------
-Clone this app into a folder on your Retropie.
+Clone this app into a folder on your Retropie. If it isnt already installed, install pip: `sudo apt-get install python-pip`.
+After this, install all the requirements with `pip install -r requirements.txt`
 Once completed, run `python romulus.py` to start the app, or create a shortcut.
 
 Developers
