@@ -42,7 +42,7 @@ class Compression(object):
             zip_ref.extractall(self.target_dir)
             zip_ref.close()
         except zipfile.BadZipfile:
-            self.clean_up(self.target_dir)
+            self.clean_up(os.path.join(self.target_dir, file_obj))
 
     def unzip_seven(self, file_obj):
         """
