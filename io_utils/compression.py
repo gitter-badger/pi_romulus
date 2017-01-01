@@ -37,9 +37,12 @@ class Compression(object):
         Unzips a ZIP archive
         :param file_obj: file to be unzipped
         """
-        zip_ref = zipfile.ZipFile(file_obj, 'r')
-        zip_ref.extractall(self.target_dir)
-        zip_ref.close()
+        try:
+            zip_ref = zipfile.ZipFile(file_obj, 'r')
+            zip_ref.extractall(self.target_dir)
+            zip_ref.close()
+        except zipfile.BadZipfile:
+            self.clean_up(self.target_dir)
 
     def unzip_seven(self, file_obj):
         """

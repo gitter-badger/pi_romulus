@@ -17,7 +17,7 @@ class Download(object):
     def __init__(self, scraper_obj):
         self.url = None
         self.dirs_obj = Directories()
-        self.base_dir = '/home/arthur/RetroPie/roms'
+        self.base_dir = '/home/pi/RetroPie/roms'
         self.scrape = scraper_obj
 
     def download(self, rom_url):
