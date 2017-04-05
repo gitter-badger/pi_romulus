@@ -1,4 +1,6 @@
 # Pi Romulus
+
+[![Join the chat at https://gitter.im/pi_romulus/Lobby](https://badges.gitter.im/pi_romulus/Lobby.svg)](https://gitter.im/pi_romulus/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Retropie ROM downloader
 
 Based on Romulus, the Linux Retropie ROM manager, Pi Romulus is intended to fill a gaping hole
